@@ -31,3 +31,7 @@ In case you wonder, where the F**CK are my PHP / PHP FPM Config?
 /etc/opt/remi/php71/php-fpm.d/www.conf
 
 ```
+#### Centos7 php7.1 配置文件位置
+```
+php71 -i | grep "Loaded Configuration File"
+```
