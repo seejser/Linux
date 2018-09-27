@@ -29,3 +29,7 @@ NVfehZ2cpr8DnD0MoWc2elKUQFmRuq3TyKnSvZRqPZ4OszmQ251mJEXcAZTUnHQQ1zszKSjO/oeY7
 1XGOMOACqSCDBIw1cyMw5QTJ73vgxDOvMGMOntr/HuJbGmAevinl062/ph+47zNFRafTPm8r 9000
 00000@qq.com
 ```
+4.zip打包当前目录
+```
+zip -r ./a.zip ./*
+```
