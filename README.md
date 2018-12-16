@@ -33,3 +33,9 @@ NVfehZ2cpr8DnD0MoWc2elKUQFmRuq3TyKnSvZRqPZ4OszmQ251mJEXcAZTUnHQQ1zszKSjO/oeY7
 ```
 zip -r ./a.zip ./*
 ```
+
+5.查询文件大小M为单位
+
+```
+du -h --max-depth=1 work/testing
+```
