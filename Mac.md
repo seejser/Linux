@@ -24,33 +24,33 @@ tree -L 3 -I "node_modules">tree.md
 nginx -v
 
 ```
-    检测：
-    ```
+#### 检测：
+```
     ps -ef|grep nginx
     nginx -t
-    ```
+```
     
-    启动：
+  #### 启动：
     
-    ```
+```
     /usr/local/Cellar/nginx/1.15.8/bin/nginx -c /usr/local/etc/nginx/nginx.conf
-    ```
+```
     
-    ```
+```
       brew services start nginx
-    ```
-    ```
-    sudo nginx
+```
+```
+ sudo nginx
    
-    ```
+```
     
-    2.端口
-  ```
+ ### .端口
+```
   sudo lsof -i :80
-  ```
-   3.php-fpm
+```
+### .php-fpm
    
-   ```
-   sudo php-fpm
-   ```
+```
+sudo php-fpm
+```
     
