@@ -18,3 +18,39 @@ tree -L 3 -I "node_modules">tree.md
 更多命令的使用可以查看tree --help。
 
 ## [Mac OS X 系统自带的 php-fpm 配置和 nginx、mysql 的安装](https://lzw.me/a/mac-osx-php-fpm-nginx-mysql.html)
+
+    1.nginx 
+    ```
+    nginx -v
+    ```
+    
+    检测：
+    ```
+    ps -ef|grep nginx
+    nginx -t
+    ```
+    
+    启动：
+    
+    ```
+    /usr/local/Cellar/nginx/1.15.8/bin/nginx -c /usr/local/etc/nginx/nginx.conf
+    ```
+    
+    ```
+      brew services start nginx
+    ```
+    ```
+    sudo nginx
+   
+    ```
+    
+    2.端口
+  ```
+  sudo lsof -i :80
+  ```
+   3.php-fpm
+   
+   ```
+   sudo php-fpm
+   ```
+    
