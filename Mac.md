@@ -20,9 +20,9 @@ tree -L 3 -I "node_modules">tree.md
 ## [Mac OS X 系统自带的 php-fpm 配置和 nginx、mysql 的安装](https://lzw.me/a/mac-osx-php-fpm-nginx-mysql.html)
 
     1.nginx 
-    ```
+    `
     nginx -v
-    ```
+    `
     
     检测：
     ```
