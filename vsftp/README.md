@@ -19,6 +19,12 @@ yum install vsftpd -y
   mkdir -p /ftpserver
 
 ```
+
+  5.查看Vsftp状态
+```
+systemctl status vsftpd
+
+```
 二、设置配置文件：vim /etc/vsftpd/vsftpd.conf 
 ```
 　　listen=NO 　　　　　　　　　　　　　　　　// 如此条改为了，等于YES也行
