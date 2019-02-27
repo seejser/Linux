@@ -39,3 +39,25 @@ zip -r ./a.zip ./*
 ```
 du -h --max-depth=1 work/testing
 ```
+
+6.linux 检测远程端口是否打开
+
+```
+telnet baidu.com 80
+```
+显示：
+```
+Trying 123.125.114.144...
+Connected to baidu.com (123.125.114.144). #==>出现Connected表示连通了，说明百度的80端口开放的
+Escape character is '^]'. #==>ctrl+]退出此地。
+^]
+telnet> quit
+Connection closed.
+```
+
+如果写脚本通过telnet检查端口可以用下面的方法：
+```
+[root@oldboy ~]# echo -e "\n"|telnet baidu.com 80|grep Connected
+Connection closed by foreign host.
+Connected to baidu.com (123.125.114.144).
+```
