@@ -33,7 +33,13 @@ npm -v
 
 
 ```
+## 目标主机安装git
 
+```
+yum install git 
+
+git --version
+```
 
 
 ## [目标主机安装yarn](https://yarnpkg.com/en/docs/install#centos-stable)
@@ -61,6 +67,17 @@ pm2 ls
 
 
 ```
+## 生成秘钥
+
+
+```
+ssh-keygen -t rsa -C "xxx@xxx.com"
+
+cat ~/.ssh/id_rsa.pub
+
+```
+
+在https://gitee.com/xx/xx.git项目的设置中填写Deploy keys setting
 
 
 ## 首次部署
@@ -70,6 +87,16 @@ pm2 ls
 
 pm2 deploy deploy.yaml production setup 
 
+
+
+```
+
+注意：fatal: could not read Username for 'https://gitee.com': No such device or address
+
+把deploy.yaml的repo修改为：
+
+```
+https://[Username]:[password]@gitee.com/xx/xxx.git 
 ```
 
 
