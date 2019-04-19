@@ -63,5 +63,23 @@ pm2 ls
 ```
 
 
+## 首次部署
+
+
+```
+
+pm2 deploy deploy.yaml production setup 
+
+```
+
+
+## 再次部署
+
+ ```
+ pm2 deploy deploy.yaml production upddate
+ ```
+
+
+
 
 
