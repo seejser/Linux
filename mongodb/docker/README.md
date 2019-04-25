@@ -23,3 +23,17 @@ docker run --name mymongo -v /mymongo/data/db -d mongo:4
 
 ```
 
+### 查看docker容器状态
+
+```
+docker ps
+
+```
+### 查看MongoDB日志
+
+```
+docker logs mymongo
+
+```
+
+
