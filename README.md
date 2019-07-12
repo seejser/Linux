@@ -110,4 +110,6 @@ sudo netstat -antup
 //杀死进程：
 
 sudo kill 123
+
+kill -9 pid 命令,来强制杀掉
 ```
