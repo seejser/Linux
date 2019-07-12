@@ -100,3 +100,14 @@ Connected to baidu.com (123.125.114.144).
 　　[root@S-CentOS home]# uname -a
 
 　　Linux S-CentOS 2.6.32-431.el6.x86_64 #1 SMP Fri Nov 22 03:15:09 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux
+  
+3.Ubuntu中程序崩溃，杀死进程方法
+
+```
+//查找进程：
+sudo netstat -antup
+
+//杀死进程：
+
+sudo kill 123
+```
