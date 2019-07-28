@@ -1,3 +1,4 @@
+# MacOs command
 ## Mac使用tree生成目录结构
 Mac下可以使用brew install tree进行安装。安装后，在terminal中输入tree -a便可以查看某个文件夹下的所有文件。
 
@@ -52,5 +53,18 @@ nginx -v
    
 ```
 sudo php-fpm
+```
+
+## 生成指定大小的文件
+
+例如生成一个2M的data.file
+```
+dd if=/dev/zero of=data.file bs=1024000 count=2
+```
+
+## cat 命令 图片和文件合成（增大图片大小或者保存秘密文件）
+
+```
+cat 2.jpg data.file > 3.jpg
 ```
     
