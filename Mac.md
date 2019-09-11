@@ -67,4 +67,15 @@ dd if=/dev/zero of=data.file bs=1024000 count=2
 ```
 cat 2.jpg data.file > 3.jpg
 ```
+
+
+## iTerm2
+
+1.安装[iTerm2](https://www.iterm2.com/downloads.html)
+
+2.安装[Oh My ZSH](https://ohmyz.sh/)
+
+```
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
     
