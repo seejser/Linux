@@ -113,3 +113,11 @@ sudo kill 123
 
 kill -9 pid 命令,来强制杀掉
 ```
+
+四、macos ERR_CONNECTION_REFUSED）：
+
+1.使用lsof解决
+
+```
+lsof -n -P -i TCP -s TCP:LISTEN
+```
