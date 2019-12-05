@@ -34,15 +34,7 @@ nginx -v
   #### 启动：
 
 
-### mac 使用code命令打开VSCode
 
-```
-我们在mac的终端可以使用 open .打开文件夹
-如果我们想用vs-code打开文件夹,用的命令是 code .,不过你得先按照code
-安装code：打开VSCode –> command+shift+p –> 输入shell command –> 点击提示Shell Command: Install ‘code’ command in PATH运行
-使用：打开终端，cd到要用VSCode打开的文件夹，然后输入命令code .即可打开
-
-```
     
 ```
     /usr/local/Cellar/nginx/1.15.8/bin/nginx -c /usr/local/etc/nginx/nginx.conf
@@ -80,6 +72,10 @@ cat 2.jpg data.file > 3.jpg
 ```
 
 
+
+
+
+
 ## iTerm2
 
 1.安装[iTerm2](https://www.iterm2.com/downloads.html)
@@ -90,3 +86,14 @@ cat 2.jpg data.file > 3.jpg
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
     
+    
+    
+  ### mac 使用code命令打开VSCode
+
+```
+我们在mac的终端可以使用 open .打开文件夹
+如果我们想用vs-code打开文件夹,用的命令是 code .,不过你得先按照code
+安装code：打开VSCode –> command+shift+p –> 输入shell command –> 点击提示Shell Command: Install ‘code’ command in PATH运行
+使用：打开终端，cd到要用VSCode打开的文件夹，然后输入命令code .即可打开
+
+```
