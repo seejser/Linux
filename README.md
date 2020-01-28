@@ -121,3 +121,10 @@ kill -9 pid 命令,来强制杀掉
 ```
 lsof -n -P -i TCP -s TCP:LISTEN
 ```
+五、GitHub 使用curl下载指定分支
+
+```
+//eg:
+curl https://codeload.github.com/mui-org/material-ui/tar.gz/master | tar -xz --strip=2 material-ui-master/examples/create-react-app
+```
+
