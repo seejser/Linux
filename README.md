@@ -62,7 +62,7 @@ Connection closed by foreign host.
 Connected to baidu.com (123.125.114.144).
 ```
 
-二、查看Linux系统版本的命令（3种方法）
+二、查看Linux系统版本的命令（4种方法）
 
 1、cat /etc/issue，此命令也适用于所有的Linux发行版。
 
@@ -86,7 +86,26 @@ Connected to baidu.com (123.125.114.144).
 　　Release: 6.5
 　　Codename: Final
 
- 
+ 4、cat /etc/*release
+ ```
+cat /etc/*release
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=18.04
+DISTRIB_CODENAME=bionic
+DISTRIB_DESCRIPTION="Ubuntu 18.04.2 LTS"
+NAME="Ubuntu"
+VERSION="18.04.2 LTS (Bionic Beaver)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 18.04.2 LTS"
+VERSION_ID="18.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=bionic
+UBUNTU_CODENAME=bionic
+ ```
 
 三、查看Linux内核版本命令（两种方法）：
 
@@ -128,3 +147,31 @@ lsof -n -P -i TCP -s TCP:LISTEN
 curl https://codeload.github.com/mui-org/material-ui/tar.gz/master | tar -xz --strip=2 material-ui-master/examples/create-react-app
 ```
 
+六、ubuntu下添加新用户
+
+1.新建
+```
+sudo useradd newuser -d /home/newuser -m
+#第一个newuser，指用户名
+#-d /home/newuser 指定用户登录系统时的主目录，宿主目录
+#-m 如果/home/newuser路径不存在，自动创建
+```
+2.查看新建的用户
+```
+cat /etc/passwd | grep newuser
+```
+3.给新用户设置密码
+```
+sudo passwd newuser
+```
+
+4.授权
+```
+
+usermod -s /bin/bash ringer
+
+
+usermod -d /home/newuser newuser
+
+
+```
