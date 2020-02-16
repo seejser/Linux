@@ -168,7 +168,7 @@ sudo passwd newuser
 4.授权
 ```
 
-usermod -s /bin/bash ringer
+usermod -s /bin/bash newuser
 
 
 usermod -d /home/newuser newuser
