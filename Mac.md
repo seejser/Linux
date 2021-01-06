@@ -97,3 +97,9 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 使用：打开终端，cd到要用VSCode打开的文件夹，然后输入命令code .即可打开
 
 ```
+
+### ssh 缓存清除
+
+    ```
+    ssh-keygen -R 192.168.1.203(你远程服务器的IP)
+    ```
