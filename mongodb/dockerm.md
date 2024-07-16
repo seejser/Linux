@@ -1,6 +1,7 @@
 # docker mongodb sh
 ## CLI 
-###
+### 通过命令更新数据
+
 `
 1. docker exec -ti norgren-mongo bash
 
