@@ -16,5 +16,9 @@
    { china_name: "上海伊里德自动化设备有限公司" }, // 查询条件
    { $set: { headquarters_address: "上海市浦东新区金桥开发区新金桥路1088号" } } // 更新操作
 )
+9. db.dealers.updateOne(
+   { china_name: "上海伊里德自动化设备有限公司" }, // 查询条件
+   { $set: { register_address: "上海市浦东新区金桥开发区新金桥路1088号" } } // 更新操作
+)
 
 `
