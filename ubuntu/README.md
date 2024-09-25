@@ -63,6 +63,37 @@ sudo tee /etc/docker/daemon.json <<-'EOF'
 EOF
 sudo systemctl daemon-reload
 sudo systemctl restart docker
+6. 通过access token登录docker hub
+[access token]()
+docker login -u hooperhu
+dckr_XXXX
+
+7. 解决docker问题
+   sudo vim /etc/resolv.conf
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+nameserver 1.1.1.1
+nameserver 114.114.114.114
+vim /etc/docker/daemon.json
+{
+     "max-concurrent-downloads": 10,
+     "max-concurrent-uploads": 5,
+     "default-shm-size": "1G",
+     "debug": true,
+     "experimental": false,
+     "registry-mirrors":[
+                "https://x9r52uz5.mirror.aliyuncs.com",
+                "https://dockerhub.icu",
+                "https://docker.chenby.cn",
+                "https://docker.1panel.live",
+                "https://docker.awsl9527.cn",
+                "https://docker.anyhub.us.kg",
+                "http://hub-mirror.c.163.com",
+                "https://docker.mirrors.ustc.edu.cn",
+                "https://dhub.kubesre.xyz"
+        ]
+}
+
 
 ## nginx
 
